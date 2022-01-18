@@ -1,0 +1,157 @@
+.footer {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.footer__copy {
+   margin-bottom: 10px;
+}
+
+.footer__data {
+  margin-bottom: 13px;
+}
+
+.footer__address {
+  padding-left: 70px;
+  position: relative;
+  margin-bottom: 0;
+
+  &::before {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('/src/img/icons/flag.svg');
+    position: absolute;
+  }
+}
+
+.footer__center-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__socials-box {
+  display: flex;
+  gap: 40px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__link {
+  width: 50px;
+  height: 50px;
+  @include bg;
+  
+  &:nth-child(1) {
+    background-image: url('/src/img/icons/footer-logo.png');
+    width: 75px;
+    height: 75px;
+  }
+  &:nth-child(2) {
+    background-image: url('/src/img/icons/insta.svg');
+  }
+  &:nth-child(3) {
+    background-image: url('/src/img/icons/vk.svg');
+  }
+}
+
+.footer__policy {
+  @include reset-btn;
+  font-size: 16px;
+  text-align: center;
+  color: #ABABAB;
+  text-decoration: underline;
+}
+
+.footer__right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact-box {
+  padding-left: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 29px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url('/src/img/icons/header-phone.svg');
+  }
+}
+
+.footer__phone {
+  font-size: 25px;
+  font-weight: bold;
+  color: #252324;
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #252324;
+    text-decoration: underline;
+  }
+}
+
+.footer__callback {
+  @include reset-btn;
+  color: #252324;
+  font-size: 16px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #252324;
+    text-decoration: underline;
+  }
+}
+
+.footer__franch5 {
+  color: black;
+  position: relative;
+  padding-left: 62px;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/icons/f5.svg');
+    left: 0px;
+    top: 50%;
+    transform: translateY(-42%);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+}

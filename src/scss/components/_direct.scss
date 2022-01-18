@@ -1,0 +1,208 @@
+.direct {
+  @include bg;
+  background-image: url('/src/img/bgs/direct-bg.jpg');
+  padding-top: 120px;
+  padding-bottom: 120px;
+  min-height: 1574px;
+
+  @media (max-width: 1150px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: auto;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.direct__title {
+  @include title;
+  margin-bottom: 60px;
+  @include max-width(695px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.direct__text {
+  @include subtitle;
+  margin-bottom: 70px;
+  @include max-width(790px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.direct__content {
+  @include mobile-mb;
+  background-color: white;
+  box-shadow: 0px 30px 65px rgba(207, 60, 149, 0.1),
+    0px 7px 20px rgba(197, 48, 138, 0.05);
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 75px;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/direct-jew-left.png');
+    left: -118px;
+    z-index: -1;
+    top: 87px;
+
+    @media (max-width: 1150px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: url('/src/img/direct-jew-right.png');
+    right: -87px;
+    z-index: -1;
+    top: 520px;
+
+    @media (max-width: 1150px) {
+      content: none;
+    }
+  }
+}
+
+.direct__head {
+  min-height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #f8b9d5;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.direct__row-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (max-width: 650px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.direct__row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-bottom: 1px solid #f2f2f2;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 1150px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &:nth-child(1) {
+    .direct__item:nth-child(1)::before {
+      background-image: url('/src/img/icons/direct/1.png');
+    }
+    .direct__item:nth-child(2)::before {
+      background-image: url('/src/img/icons/direct/2.png');
+    }
+  }
+  &:nth-child(2) {
+    .direct__item:nth-child(1)::before {
+      background-image: url('/src/img/icons/direct/3.png');
+    }
+    .direct__item:nth-child(2)::before {
+      background-image: url('/src/img/icons/direct/4.png');
+    }
+  }
+  &:nth-child(3) {
+    .direct__item:nth-child(1)::before {
+      background-image: url('/src/img/icons/direct/5.png');
+    }
+    .direct__item:nth-child(2)::before {
+      background-image: url('/src/img/icons/direct/6.png');
+    }
+  }
+  &:nth-child(4) {
+    .direct__item:nth-child(1)::before {
+      background-image: url('/src/img/icons/direct/7.png');
+    }
+    .direct__item:nth-child(2)::before {
+      background-image: url('/src/img/icons/direct/8.png');
+    }
+  }
+  &:nth-child(5) {
+    .direct__item:nth-child(1)::before {
+      background-image: url('/src/img/icons/direct/9.png');
+    }
+    .direct__item:nth-child(2)::before {
+      background-image: url('/src/img/icons/direct/10.png');
+    }
+  }
+}
+
+.direct__item {
+  @include max-width(474px);
+  padding-left: 125px;
+  position: relative;
+
+  @media (max-width: 650px) {
+    padding-left: 0;
+    padding-top: 100px;
+  }
+
+  &::before {
+    width: 90px;
+    height: 90px;
+    @include bg;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 650px) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0px;
+    }
+  }
+}
+
+.direct__note {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
