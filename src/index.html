@@ -14,12 +14,16 @@
       integrity="sha512-qCt/OTd55ilhuXLRNAp/G8uONXUrpFoDWsXDtyjV4wMbvh46dOEjvHZyWkvnffc6I2g/WHSKsaFUCm0RISxnzQ=="
       crossorigin="anonymous"
     ></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.map&lang=ru-RU"></script>
   </head>
   <body>
     <main>
       <section class="desc">
-        <div class="container">
+        <div class="container container_desc">
           <header class="header">
             <div class="header__content">
               <img
@@ -88,17 +92,17 @@
 
       <section class="argument">
         <div class="container">
-          <h2 class="argument__title">
+          <h2 class="argument__title animate animateX">
             Перспективность бизнеса <br />
             на маркетплейсах с YAVIKA <span>в 5 тезисах</span>
           </h2>
-          <p class="argument__text">
+          <p class="argument__text animate animateX">
             <b>Крайние годы стали взрывными для интернет-торговли</b>, и сейчас
             у вас ещё есть возможность использовать тренды для создания
             прибыльного дела.
           </p>
           <ul class="argument__list">
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">134,7 млрд руб</p>
               <p class="argument__item-text">
                 Выручки и 80% рост показал Wildberries только за первый квартал
@@ -106,14 +110,14 @@
                 в топ-5 самых дорогих компаний России.
               </p>
             </li>
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">Наценки до 300%</p>
               <p class="argument__item-text">
                 Товары на маркетплейсах продаются с высокими наценками
                 от закупочной стоимости, при этом спрос на них всегда высок
               </p>
             </li>
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">Затраты на офис 0 рублей</p>
               <p class="argument__item-text">
                 Вести бизнес на маркетплейсах возможно без офиса и собственных
@@ -121,7 +125,7 @@
                 ежемесячно.
               </p>
             </li>
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">
                 Расходы ФОТ составят <br />
                 0 рублей
@@ -130,7 +134,7 @@
                 Продавать на маркетплейсах возможно в одиночку без команды
               </p>
             </li>
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">Больше свободного времени</p>
               <p class="argument__item-text">
                 Такой бизнес требует гораздо меньше времени, чем классический,
@@ -138,7 +142,7 @@
                 посвящать больше времени семье и отдыху.
               </p>
             </li>
-            <li class="argument__item">
+            <li class="argument__item animate animateY">
               <p class="argument__item-title">Рынок перспективен,</p>
               <p class="argument__item-text">
                 однако, чтобы выйти на него без ошибок <br />
@@ -153,11 +157,11 @@
 
       <section class="shops">
         <div class="container">
-          <h2 class="shops__title">
+          <h2 class="shops__title animate animateX">
             <span>Топ 3 маркетплейса,</span> <br />
             с которыми идёт работа
           </h2>
-          <div class="shops__content">
+          <div class="shops__content animate animateY">
             <div class="shops__caption-column">
               <div class="shops__cell"></div>
               <div class="shops__cell">
@@ -189,7 +193,7 @@
                   src="./img/icons/shops/wildberries.png"
                   alt="Логотип Wildberries"
                   width="176"
-                  height="39"
+                  height="48"
                 />
               </div>
               <div class="shops__cell">
@@ -226,7 +230,7 @@
                   src="./img/icons/shops/ozon.png"
                   alt="Логотип Ozon"
                   width="176"
-                  height="48"
+                  height="39"
                 />
               </div>
               <div class="shops__cell">
@@ -293,7 +297,7 @@
             </div>
           </div>
 
-          <section class="slider-shops">
+          <section class="slider-shops animate animateY">
             <div class="slider-shops__wrapper">
               <div class="slider-shops__img-box">
                 <div class="slider-shops__img-item">
@@ -304,7 +308,7 @@
                         src="./img/icons/shops/wildberries.png"
                         alt="Логотип Wildberries"
                         width="176"
-                        height="39"
+                        height="48"
                       />
                     </div>
                     <div class="shops__cell">
@@ -371,7 +375,7 @@
                         src="./img/icons/shops/ozon.png"
                         alt="Логотип Ozon"
                         width="176"
-                        height="48"
+                        height="39"
                       />
                     </div>
                     <div class="shops__cell">
@@ -532,7 +536,7 @@
             <div class="slider-shops__nav-box"></div>
           </section>
 
-          <form class="line-form">
+          <form class="line-form animate animateY">
             <h3 class="line-form__title">
               Получите презентацию франшизы и узнайте как зарабатывать до
               2&nbsp;600&nbsp;000 рублей в год на продаже бижутерии на
@@ -587,28 +591,28 @@
         <div class="container">
           <div class="goods__content">
             <div class="goods__left-side">
-              <h2 class="goods__title">
+              <h2 class="goods__title animate animateX">
                 Закупайте популярную бижутерию на спецусловиях и продавайте с
                 наценкой<br />
                 <span>от 200% до 1&nbsp;000%</span>
               </h2>
-              <p class="goods__text">
+              <p class="goods__text animate animateX">
                 При работе с YAVIKA вы будете закупать интересные товары у
                 многократно проверенных поставщиков и реализовать их
                 <b>с максимально возможной наценкой.</b>
               </p>
               <ul class="goods__list">
-                <li class="goods__item">
+                <li class="goods__item animate animateX">
                   <b>Непрерывно ведём переговоры с производителями из Китая,</b>
                   находим тем, кто готов поставлять перспективные товары по
                   выгодной нам стоимости.
                 </li>
-                <li class="goods__item">
+                <li class="goods__item animate animateX">
                   <b>Дважды проверяем каждую партию</b> — сначала на
                   распределительном центре в Китае, затем в Казани, поэтому брак
                   и плохое качество исключены.
                 </li>
-                <li class="goods__item">
+                <li class="goods__item animate animateX">
                   Работаем без посредников, следовательно,
                   <b
                     >все товары вы будете закупать без лишних наценок и
@@ -616,12 +620,12 @@
                   >
                 </li>
               </ul>
-              <p class="goods__note">
+              <p class="goods__note animate animateX">
                 Такой подход защищает от недобросовестных поставщиков
                 <b>и позволяет зарабатывать с первой проданной партии</b>
               </p>
             </div>
-            <div class="goods__right-side">
+            <div class="goods__right-side animate animateY">
               <section class="slider-goods">
                 <div class="slider-goods__wrapper">
                   <div class="slider-goods__img-box">
@@ -868,7 +872,7 @@
               <div class="slider-goods__nav-box"></div>
             </div>
           </div>
-          <div class="goods__feedback-box">
+          <div class="goods__feedback-box animate animateY">
             <p class="goods__feedback-text">
               <b>Изучите полный каталог изделий,</b> доступных к оптовой закупке
               и продаже с высокой наценкой.
@@ -882,21 +886,21 @@
 
       <section class="direct">
         <div class="container">
-          <h2 class="direct__title">
+          <h2 class="direct__title animate animateX">
             Действуйте как профессионал<br />
             <span>с 10 направлениями поддержки</span>
           </h2>
-          <p class="direct__text">
+          <p class="direct__text animate animateX">
             <b>YAVIKA гарантирует, что ваш бизнес будет быстро развиваться,</b>
             вы избежите распространённых ошибок и добьётесь всех поставленных
             целей.
           </p>
-          <div class="direct__content">
+          <div class="direct__content animate animateY">
             <p class="direct__head">
               Предусмотрели целый комплекс мер поддержки:
             </p>
             <div class="direct__row-list">
-              <div class="direct__row">
+              <div class="direct__row animate animateX">
                 <div class="direct__item">
                   Руководство по открытию бизнеса на маркетплейсах с пошаговыми
                   описаниями каждого направления.
@@ -906,7 +910,7 @@
                   особенностей ваших товаров и других нюансов.
                 </div>
               </div>
-              <div class="direct__row">
+              <div class="direct__row animate animateX">
                 <div class="direct__item">
                   Инструкция по регистрации юридического лица, открытие
                   расчётного счёта, выбор формы налогообложения.
@@ -916,7 +920,7 @@
                   интернет-площадке для удобного обучения делам в любое время.
                 </div>
               </div>
-              <div class="direct__row">
+              <div class="direct__row animate animateX">
                 <div class="direct__item">
                   Финансовая модель ЭТТ, подготовленная экспертами на основе
                   глубокой аналитики.
@@ -926,7 +930,7 @@
                   постоянного привлечения клиентов.
                 </div>
               </div>
-              <div class="direct__row">
+              <div class="direct__row animate animateX">
                 <div class="direct__item">
                   Инструкция по работе с фотоконтентом — ваши товары будут
                   выделяться среди конкурентов по площадке.
@@ -936,7 +940,7 @@
                   категорий сотрудников.
                 </div>
               </div>
-              <div class="direct__row">
+              <div class="direct__row animate animateX">
                 <div class="direct__item">
                   Инструкция по аналитике, основанной на искусственном
                   интеллекте и нейросетях (двухуровневая сеть прямого
@@ -950,7 +954,7 @@
               </div>
             </div>
           </div>
-          <p class="direct__note">
+          <p class="direct__note animate animateY">
             Каждый этап работы уже продуман и организован — приступайте и
             зарабатывайте.
           </p>
@@ -959,18 +963,18 @@
 
       <section class="steps">
         <div class="container">
-          <h2 class="steps__title">
+          <h2 class="steps__title animate animateX">
             <span>Старт в 7 этапов:</span> узнайте, как начнётся ваш бизнес
           </h2>
           <ul class="steps__list">
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Подбор товаров</p>
               <p class="steps__item-text">
                 С помощью программы с искусственным интеллектом выбираем для вас
                 украшения и аксессуары с хорошими перспективами продаж
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Закупка</p>
               <p class="steps__item-text">
                 Наши байеры проверят и выкупят ваши товары напрямую в Китае
@@ -978,35 +982,35 @@
                 по оптимальной стоимости.
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Регистрация на маркетплейсах</p>
               <p class="steps__item-text">
                 Создаём ваши магазины на топовых площадках <br />
                 и начинаем продвигать.
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Фото и видеосессии</p>
               <p class="steps__item-text">
                 Сразу после получения товаров снимем их на фото и видео <br />
                 в профессиональной студии, чтобы привлечь больше покупателей.
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Доставка</p>
               <p class="steps__item-text">
                 Собственными силами отправим на склады маркетплейсов, <br />
                 качественно упакуем по всем стандартам.
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Продвижение</p>
               <p class="steps__item-text">
                 Используем таргетированную рекламу и другие инструменты, <br />
                 чтобы обеспечить вам стабильный поток заказов.
               </p>
             </li>
-            <li class="steps__item">
+            <li class="steps__item animate animateX">
               <p class="steps__item-title">Доход</p>
               <p class="steps__item-text">
                 Вы регулярно получаете прибыль от продаж без серьёзных усилий, а
@@ -1014,7 +1018,7 @@
               </p>
             </li>
           </ul>
-          <div class="steps__text-box">
+          <div class="steps__text-box animate animateY">
             <div class="bg-line"></div>
             <p class="steps__small-text">
               Ваша занятость <br />
@@ -1029,7 +1033,7 @@
 
       <section class="offer">
         <div class="container">
-          <h2 class="offer__title">
+          <h2 class="offer__title animate animateX">
             <span
               >Заручитесь поддержкой команды с 8-летним опытом в
               интернет-торговле</span
@@ -1037,17 +1041,17 @@
             <br />
             и зарабатывайте без офиса, складов и большого штата
           </h2>
-          <p class="offer__text">
+          <p class="offer__text animate animateX">
             <b>YAVIKA предлагает вам быстрый старт в перспективной нише —</b>
             бижутерию и аксессуары на маркетплейсах заказывают в течение всего
             года
           </p>
-          <p class="offer__note">
+          <p class="offer__note animate animateX">
             Успейте занять место в сети и начать зарабатывать дистанционно по
             проверенной схеме.
           </p>
 
-          <form class="line-form line-form_offer">
+          <form class="line-form line-form_offer animate animateY">
             <h3 class="line-form__title">
               Получите чек-лист по запуску бизнеса на маркетплейсах с доходом до
               2&nbsp;600&nbsp;000 рублей в год
@@ -1095,14 +1099,16 @@
             </p>
           </form>
         </div>
-      </section>
+      </section>s
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__left-side">
-            <p class="footer__copy">© YAVIKA, 2013-<span class="js-year">2021</span> г.</p>
+            <p class="footer__copy">
+              © YAVIKA, 2013-<span class="js-year">2021</span> г.
+            </p>
             <p class="footer__data">ИП Ирина Смоленцева, ИНН: 121509980423</p>
             <address class="footer__address">
               Россия, Республика <br />
@@ -1111,9 +1117,21 @@
           </div>
           <div class="footer__center-side">
             <div class="footer__socials-box">
-              <a href="" class="footer__link"></a
-              ><a href="" class="footer__link"></a
-              ><a href="" class="footer__link"></a>
+              <a
+                href="https://fr.yavika.ru"
+                target="_blank"
+                class="footer__link"
+              ></a
+              ><a
+                href="https://instagram.com/yavika.ru"
+                target="_blank"
+                class="footer__link"
+              ></a
+              ><a
+                href="https://vk.com/yavikaru"
+                target="_blank"
+                class="footer__link"
+              ></a>
             </div>
           </div>
           <div class="footer__right-side">

@@ -29,6 +29,11 @@ main {
   z-index: 1;
   max-width: 1140px;
   margin: 0 auto;
+  opacity: 0;
+
+  &_desc {
+    opacity: 1;
+  }
 
   @media (max-width: 1150px) {
     padding: 0 30px;
