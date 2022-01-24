@@ -31,7 +31,8 @@ main {
   margin: 0 auto;
   opacity: 0;
 
-  &_desc {
+  &_desc,
+  &_thanks {
     opacity: 1;
   }
 
