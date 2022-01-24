@@ -58,15 +58,15 @@
   height: 50px;
   @include bg;
   
+  // &:nth-child(1) {
+  //   background-image: url('/src/img/icons/footer-logo.png');
+  //   width: 75px;
+  //   height: 75px;
+  // }
   &:nth-child(1) {
-    background-image: url('/src/img/icons/footer-logo.png');
-    width: 75px;
-    height: 75px;
-  }
-  &:nth-child(2) {
     background-image: url('/src/img/icons/insta.svg');
   }
-  &:nth-child(3) {
+  &:nth-child(2) {
     background-image: url('/src/img/icons/vk.svg');
   }
 }
