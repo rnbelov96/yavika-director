@@ -149,33 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (document.formData.name === undefined) document.formData.name = window.location.hostname;
 
-      // fetch(
-      //   `welcomemail.php?name=${document.formData.name}&email=${document.formData.email}`,
-      // ).then(data => data.text().then(text => console.log(text)));
-
-      // const bitrixData = {
-      //   email: document.formData.email,
-      //   phone: document.formData.phone,
-      //   city: document.formData.city,
-      //   name: document.formData.name,
-      // };
-      // let bitrixFormBody = [];
-      // Object.keys(bitrixData).forEach(key => {
-      //   const encodedKey = encodeURIComponent(key);
-      //   const encodedValue = encodeURIComponent(bitrixData[key]);
-      //   bitrixFormBody.push(`${encodedKey}=${encodedValue}`);
-      // });
-      // bitrixFormBody = bitrixFormBody.join('&');
-      // await fetch(
-      //   'bitrix/index.php',
-      //   {
-      //     method: 'POST',
-      //     headers: {
-      //       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-      //     },
-      //     body: bitrixFormBody,
-      //   },
-      // );
+      fetch(
+        `welcomemail.php?name=${document.formData.name}&email=${document.formData.email}`,
+      ).then(data => data.text().then(text => console.log(text)));
 
       const data = JSON.stringify(document.formData);
 
